@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon"
+        href="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png">
+    <title>Contact Bruno</title>
+    <!--Main Style-->
+    <link rel="stylesheet" href="contact.css" />
+    <!--FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-items">
+                <div> <img
+                        src="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png"
+                        alt="logo" />
+                </div>
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/about/about.html">About</a></div>
+                <div><a href="/contact/contact.html">Contact</a></div>
+            </div>
+        </div>
+    </header>
+    <section id="contactme">
+        <div class="container">
+            <h2 class="titleContactMe">Contact
+                <span style="color:#F6D55C; text-decoration:underline;">
+                    <span style="color:#173f5f;">Bruno</span>
+                </span>
+            </h2>
+            <div class="wrapper ">
+                <div class="greet">
+                    <h3 class="animate-box fadeInUp animated-fast">
+                        <span>Bruno DaSilva</span> Web Developer
+                    </h3>
+
+                    <p class="animate-box fadeInUp animated-fast" id="hide-text-small-screen" style="color:#FFCC5C;">
+                        I am excited to hear from you <i class="fas fa-mug-hot "></i>
+                    </p>
+                </div>
+
+                <div class="contact">
+                    <div class="alert">Your Message has been sent</div>
+                    <form id="contactForm">
+                        <p>
+                            <input name="name" type="text" placeholder="Your Full Name" id="form-name" required="">
+                            <span class="error"><i class="fas fa-circle"></i> </span>
+                        </p>
+                        <br>
+                        <p>
+                            <input name="email" type="email" placeholder="Your E-mail Address" id="form-email"
+                                required="">
+                            <span class="error"><i class="fas fa-circle"></i> </span>
+                        </p>
+                        <br>
+                        <p>
+                            <input name="subject" type="text" placeholder="Subject" id="form-subject">
+                        </p>
+                        <p>
+                            <textarea name="message" placeholder="Message" rows="4" id="form-message"
+                                required=""></textarea>
+                            <span class="error"><i class="fas fa-circle"></i> </span>
+                        </p>
+                        <br>
+                        <p id="btn-form"><input type="submit" name="submit"></p>
+
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <svg viewBox="0 0 100 25">
+
+            <path fill="#20639b" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+        </svg>
+    </section>
+
+    <footer>
+        <img src="https://res.cloudinary.com/duprwuo4j/image/upload/c_scale,w_155/v1574831158/imgs_starwars/imgs/BLOGO_k36v5y.png"
+            alt="logo" />
+        <p>&copy 2020 Bruno DaSilva<span> Front-End Developer</span></p>
+        <div class="info-Bruno">
+            <p>More Projects</p>
+            <a href="https://github.com/DaSilvaBrunoTexas" target="_blank"><i class="fab fa-github-alt"></i></a>
+
+            <a href="https://www.linkedin.com/in/bruno-dasilva/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="http://bruno-dasilva.com/" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+            </a>
+        </div>
+        <br>
+    </footer>
+    <!--FireBase Script-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --base: #2b498b;
+  --dark-font-color-title: #173f5f;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: white;
+  color: var(--base);
+  font-family: "helvetica neue", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*******************************
+*  START - Navigation Style    
+*******************************/
+
+.navbar {
+  height: 30px;
+  background-color: var(--nave-light-blue);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--details-light-blue);
+  padding: 20px !important;
+  z-index: 20;
+}
+
+.navbar img {
+  width: 25px;
+  height: auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--color-light);
+  letter-spacing: 1px;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: "Muli", sans-serif;
+}
+.navbar a:hover {
+  color: var(--farting-yellow);
+}
+
+.navbar-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*******************************
+*    END - Navigation Style    
+*******************************/
+
+.main-data {
+  margin: 3.5rem;
+  font-size: 2rem;
+}
+
+/*******************************
+*    Main Container Style
+*******************************/
+
+/*******************************
+*     Footer and SVG
+*******************************/
+svg {
+  margin-bottom: -35px;
+  z-index: 5;
+}
+footer {
+  font-family: "Shadows Into Light Two", cursive;
+  min-height: 30vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: var(--nave-light-blue);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+footer span {
+  color: var(--farting-yellow);
+}
+footer img {
+  width: 90px;
+  height: auto;
+}
+
+footer .info-Bruno {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-Bruno p {
+  color: var(--light-font-color-title);
+  font-size: 1.8rem;
+}
+
+.info-Bruno a {
+  color: var(--light-font-color-title);
+  padding: 10px;
+}
+
+.info-Bruno a:hover {
+  color: var(--farting-yellow);
+}

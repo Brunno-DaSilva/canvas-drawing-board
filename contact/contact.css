@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --dark-font-color-title: #173f5f;
+  --base: #2b498b;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+  --light-warm-color: #fafbfc; 
+  --alert-success: #118506d3; 
+  --error-pointers: #f71212d5;
+}
+
+*{
+    margin: 0;
+   padding:0;
+ }
+ 
+ body{
+   width:100vw;
+   background-color:#225470;
+ 
+ }
+
+/*******************************
+*  START - Navigation Style    
+*******************************/
+
+.navbar {
+    height: 30px;
+    background-color: var(--nave-light-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--details-light-blue);
+    padding: 20px !important;
+    z-index: 20;
+  }
+  
+  .navbar img {
+    width: 25px;
+    height: auto;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: var(--color-light);
+    letter-spacing: 1px;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
+  }
+  .navbar a:hover {
+    color: var(--farting-yellow);
+  }
+  
+  .navbar-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  /*******************************
+  *    END - Navigation Style    
+  *******************************/
+ 
+ .container {
+   max-width: 50%;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin: auto;
+   text-align: center;
+ }
+ 
+ .wrapper {
+     display: grid;
+     grid-template-columns: 1fr !important;
+   }
+ 
+   #contactme .titleContactMe {
+     font-family: "Shadows Into Light Two", cursive;
+     font-size: 60px !important;
+     transform: rotate(2deg) !important;
+     margin-top: 0px;
+   }
+   
+ 
+ #contactme {
+   padding: 0;
+   background-color: var(--light-font-color)
+ }
+ 
+ .titleContactMe {
+   text-align: center;
+   font-family: "Shadows Into Light Two", cursive;
+   font-size: 80px;
+   transform: rotate(2deg);
+   color: var(--nave-light-blue);
+   margin-bottom: 60px;
+ }
+ 
+ .wrapper {
+   box-shadow: 0 0 20px 0 #485e74b3;
+   margin-bottom: 100px;
+   border-radius: 25px;
+   background: var(--dark-font-color-title);
+ }
+ .wrapper > * {
+   padding: 1.5em;
+ }
+ .greet h3,
+ .greet p {
+   color: var(--light-font-color);
+ }
+ .greet h3 {
+   font-family: "Shadows Into Light Two", cursive;
+   font-size: 2rem;
+ }
+ 
+ .greet h3 span {
+   color: var(--light-font-color-title);
+   font-size: 2.5rem;
+   font-family: "Shadows Into Light Two", cursive;
+   font-weight: bold;
+ }
+ 
+ .contact {
+   background: var(--light-warm-color);
+   border-radius: 25px;
+ }
+ .contact form {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 5px;
+ }
+ .contact form input,
+ .contact form textarea {
+   width: 50%;
+   padding: 1em;
+   border: none;
+   outline: none;
+   background: transparent;
+   border-bottom: 1px solid #4f5050af;
+   color: #4f5050af;
+ }
+ 
+ #btn-form input {
+   border: none;
+   width: 150px;
+   background: var(--teal-green);
+   color: var(--light-font-color);
+   font-size: 1.2rem;
+   padding: 0.5rem 1rem;
+   text-decoration: none;
+   border-radius: 10px;
+   letter-spacing: 2px
+ }
+ #btn-form input:hover {
+   cursor: pointer;
+   color: 	var(--light-warm-color);
+    -moz-box-shadow:    inset 0 0 10px #909090;
+    -webkit-box-shadow: inset 0 0 10px #909090;
+    box-shadow:         inset 0 0 10px #909090;
+ 
+ }
+
+ .alert {
+    text-align: center;
+    padding: 10px;
+    background: #118506d3;
+    color: #fff;
+    display: none;
+  }
+  
+ .error i {
+   color: #f71212d5;
+   font-size: 6px;
+ }
+ 
+ svg {
+   background-size: cover;
+   width: 100%;
+   display: block;
+ }
+
+
+ /*******************************
+*     Footer and SVG
+*******************************/
+
+svg {
+    margin-bottom: -35px;
+    z-index: 5;
+  }
+  footer {
+    font-family: "Shadows Into Light Two", cursive;
+    min-height: 30vh;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: auto;
+    background-color: var(--nave-light-blue);
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  footer span {
+    color: var(--farting-yellow);
+  }
+  footer img {
+    width: 90px;
+    height: auto;
+  }
+  
+  footer .info-Bruno {
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .info-Bruno p {
+    color: var(--light-font-color-title);
+    font-size: 1.8rem;
+  }
+  
+  .info-Bruno a {
+    color: var(--light-font-color-title);
+    padding: 10px;
+  }
+  
+  .info-Bruno a:hover {
+    color: var(--farting-yellow);
+  }
+  
+ 
+ @media (max-width: 750px) {
+   .wrapper {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+   }
+ 
+   .wrapper > * {
+     padding: 2em;
+   }
+ 
+   .company-info h3,
+   .company-info ul,
+   .brand {
+     text-align: left;
+   }
+ }
+ 
