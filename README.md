@@ -13,4 +13,4 @@
 ```
 
 
-##### Demo: https://dasilvabrunotexas.github.io/canvas-drawing-board/
+##### Demo: https://brunno-dasilva.github.io/canvas-drawing-board/
